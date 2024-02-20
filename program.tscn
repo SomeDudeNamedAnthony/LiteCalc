@@ -1,0 +1,165 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2g7nngqrae27"]
+
+[ext_resource type="Script" path="res://program.gd" id="1_dfldy"]
+
+[node name="Program" type="Node"]
+script = ExtResource("1_dfldy")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Content" type="VBoxContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Output" type="Label" parent="UI/Content"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="UI/Content"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Column 1" type="HBoxContainer" parent="UI/Content/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Clear" type="Button" parent="UI/Content/Buttons/Column 1" groups=["calculator_function"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "AC"
+
+[node name="Sign" type="Button" parent="UI/Content/Buttons/Column 1" groups=["calculator_function"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "+/-"
+
+[node name="Modulus" type="Button" parent="UI/Content/Buttons/Column 1" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "%"
+
+[node name="Divide" type="Button" parent="UI/Content/Buttons/Column 1" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "÷"
+
+[node name="Column 2" type="HBoxContainer" parent="UI/Content/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Seven" type="Button" parent="UI/Content/Buttons/Column 2" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "7"
+
+[node name="Eight" type="Button" parent="UI/Content/Buttons/Column 2" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "8"
+
+[node name="Nine" type="Button" parent="UI/Content/Buttons/Column 2" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "9"
+
+[node name="Multiply" type="Button" parent="UI/Content/Buttons/Column 2" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "×"
+
+[node name="Column 3" type="HBoxContainer" parent="UI/Content/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Four" type="Button" parent="UI/Content/Buttons/Column 3" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "4"
+
+[node name="Five" type="Button" parent="UI/Content/Buttons/Column 3" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "5"
+
+[node name="Six" type="Button" parent="UI/Content/Buttons/Column 3" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "6"
+
+[node name="Minus" type="Button" parent="UI/Content/Buttons/Column 3" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "-"
+
+[node name="Column 4" type="HBoxContainer" parent="UI/Content/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="One" type="Button" parent="UI/Content/Buttons/Column 4" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "1"
+
+[node name="Two" type="Button" parent="UI/Content/Buttons/Column 4" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "2"
+
+[node name="Three" type="Button" parent="UI/Content/Buttons/Column 4" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "3"
+
+[node name="Plus" type="Button" parent="UI/Content/Buttons/Column 4" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "+"
+
+[node name="Column 5" type="HBoxContainer" parent="UI/Content/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Zero" type="Button" parent="UI/Content/Buttons/Column 5" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(132, 64)
+layout_mode = 2
+text = "0"
+
+[node name="Dot" type="Button" parent="UI/Content/Buttons/Column 5" groups=["calculator_equation_input"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "."
+
+[node name="Equal" type="Button" parent="UI/Content/Buttons/Column 5" groups=["calculator_function"]]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+text = "="
